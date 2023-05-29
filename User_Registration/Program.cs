@@ -8,11 +8,11 @@ namespace User_Registration
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to User Registration Problem using REGEX and Pattern!");
-            Console.WriteLine("Valid User First Name!");
-            string name = "^[A-Za-z]{3,}$";
+            Console.WriteLine("User need to follow Pre-defined PassWord rules. [Rule 1]!");
+            string passWord = @"^[A-Za-z]{8,}$";
 
-            Regex regex = new Regex(name);
-            Console.WriteLine("Enter first name:");
+            Regex regex = new Regex(passWord);
+            Console.WriteLine("Enter PassWord:");
             string s = Console.ReadLine();
             Console.WriteLine("It is: " + regex.IsMatch(s));
         }
