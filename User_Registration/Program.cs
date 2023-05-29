@@ -8,7 +8,8 @@ namespace User_Registration
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to User Registration Problem using REGEX and Pattern!");
-            Console.WriteLine("User need to follow Pre-defined PassWord rules. [Rule 1]!");
+            Console.WriteLine("User need to follow Pre-defined PassWord rules!");
+            Console.WriteLine("[Rule 1] Minimun 8 Characters");
             string passWord = @"^[A-Za-z]{8,}$";
 
             Regex regex = new Regex(passWord);
